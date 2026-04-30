@@ -1,4 +1,4 @@
-# �️ FoodSwift - Smart University Campus Canteen Ordering
+#  FoodSwift - Smart University Campus Canteen Ordering
 
 FoodSwift is a smart university campus canteen ordering application designed to improve the food ordering experience inside university campuses. The app helps students browse available meals, customize their orders, pre-order food, track order status in real time, and pick up their meals from the canteen without waiting in long queues during peak hours.
 
@@ -16,16 +16,16 @@ The project focuses on solving common university canteen problems such as long q
 ### Login Screen
 <img src="assets/Screenshot_1.png" alt="FoodSwift Login Screen" width="250"/>
 
-### Registration Screen
+### Canteen Menu Browse
 <img src="assets/Screenshot_2.png" alt="FoodSwift Registration Screen" width="250"/>
 
-### Canteen Menu Browse
+### Shopping Cart
 <img src="assets/Screenshot_3.png" alt="FoodSwift Menu Screen" width="250"/>
 
-### Shopping Cart
+### Order Tracking
 <img src="assets/Screenshot_4.png" alt="FoodSwift Cart Screen" width="250"/>
 
-### Order Tracking
+### Feedback Form
 <img src="assets/Screenshot_5.png" alt="FoodSwift Orders Screen" width="250"/>
 
 </div>
