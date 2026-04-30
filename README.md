@@ -1,6 +1,10 @@
-# 🍔 FoodSwift - Modern Food Delivery App
+# �️ FoodSwift - Smart University Campus Canteen Ordering
 
-A beautifully designed, modern food delivery application built with Flutter and Firebase. FoodSwift features a sleek UI/UX with comprehensive functionality for browsing menus, managing orders, and seamless user authentication.
+FoodSwift is a smart university campus canteen ordering application designed to improve the food ordering experience inside university campuses. The app helps students browse available meals, customize their orders, pre-order food, track order status in real time, and pick up their meals from the canteen without waiting in long queues during peak hours.
+
+FoodSwift includes different user roles, such as students, canteen staff, and admin managers. Students can place and track orders, canteen staff can manage incoming orders and update food availability, while admins can monitor operations, review reports, manage system data, and improve service efficiency.
+
+The project focuses on solving common university canteen problems such as long queues, manual order handling, unclear food availability, order mistakes, and lack of real-time tracking. By digitalizing the ordering process, FoodSwift provides a faster, more organized, and user-friendly experience for both students and canteen operators.
 
 ## 📱 Screenshots
 
@@ -9,24 +13,24 @@ A beautifully designed, modern food delivery application built with Flutter and 
 ### 🚀 **Splash Screen**
 <img src="assets/Screenshot_0.png" alt="FoodSwift Splash Screen" width="250"/>
 
-### 🔐 **Login Screen**
+### Login Screen
 <img src="assets/Screenshot_1.png" alt="FoodSwift Login Screen" width="250"/>
 
-### 📝 **Registration Screen**
+### Registration Screen
 <img src="assets/Screenshot_2.png" alt="FoodSwift Registration Screen" width="250"/>
 
-### 🍽️ **Menu & Restaurant Browse**
+### Canteen Menu Browse
 <img src="assets/Screenshot_3.png" alt="FoodSwift Menu Screen" width="250"/>
 
-### 🛒 **Shopping Cart**
+### Shopping Cart
 <img src="assets/Screenshot_4.png" alt="FoodSwift Cart Screen" width="250"/>
 
-### 📦 **Order Tracking**
+### Order Tracking
 <img src="assets/Screenshot_5.png" alt="FoodSwift Orders Screen" width="250"/>
 
 </div>
 
-## ✨ Features
+## Features
 
 ### 🎨 **Modern UI/UX Design**
 - **Contemporary Design System**: Modern color palette with orange/red gradient theme
@@ -41,32 +45,35 @@ A beautifully designed, modern food delivery application built with Flutter and 
 - **Password Recovery**: Forgot password functionality
 
 ### 🍽️ **Menu & Ordering**
-- **Restaurant Selection**: Browse multiple restaurants with logos
+- **Canteen Menu Browse**: Browse available meals from campus canteens
 - **Food Type Filtering**: Filter by cuisine types (Malaysian, Indian, Chinese, Western)
 - **Detailed Menu Items**: Rich product cards with images, prices, and descriptions
+- **Pre-order Options**: Schedule meals in advance to avoid peak hour queues
 - **Customization Options**: Spice level, portion size, and special notes
 
 ### 🛒 **Shopping Cart**
 - **Cart Management**: Add, edit, and remove items from cart
-- **Real-time Updates**: Live price calculations
+- **Real-time Updates**: Live price calculations and availability checks
 - **Order Summary**: Clear breakdown of items and totals
-- **Checkout Process**: Seamless order placement
+- **Pre-order Checkout**: Schedule pickup time to avoid waiting
 
 ### 📦 **Order Tracking**
-- **Order Status**: Real-time order status updates (Preparing, Ready, Completed)
+- **Real-time Status**: Live order updates (Preparing, Ready for Pickup, Completed)
 - **Order History**: View past orders and details
-- **Restaurant Information**: Complete restaurant details for each order
+- **Pickup Notifications**: Get alerts when your order is ready
+- **Canteen Information**: Complete canteen details and operating hours
 
 ### 👤 **User Profile**
-- **Account Management**: Update personal information
-- **Order Preferences**: Manage delivery preferences
-- **Settings**: App customization options
+- **Account Management**: Update personal information and student details
+- **Order Preferences**: Manage pickup preferences and dietary requirements
+- **Settings**: App customization options and notification preferences
 
 ### 🛠️ **Admin Dashboard**
-- **Analytics Overview**: Track orders, revenue, and user statistics
-- **Menu Management**: Add, edit, and remove menu items
-- **User Management**: View and manage customer accounts
-- **Feedback System**: Monitor customer feedback and complaints
+- **Analytics Overview**: Track orders, peak hours, and student preferences
+- **Menu Management**: Add, edit, and remove menu items and availability
+- **Staff Management**: Manage canteen staff roles and permissions
+- **Operations Monitoring**: Real-time order tracking and queue management
+- **Feedback System**: Monitor student feedback and improve service
 
 ## 🚀 Technology Stack
 
