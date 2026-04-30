@@ -10,7 +10,7 @@ The project focuses on solving common university canteen problems such as long q
 
 <div align="center">
 
-### 🚀 **Splash Screen**
+###  **Splash Screen**
 <img src="assets/Screenshot_0.png" alt="FoodSwift Splash Screen" width="250"/>
 
 ### Login Screen
