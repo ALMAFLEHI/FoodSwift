@@ -12,16 +12,16 @@ A beautifully designed, modern food delivery application built with Flutter and 
 ### 🔐 **Login Screen**
 <img src="assets/Screenshot_1.png" alt="FoodSwift Login Screen" width="250"/>
 
-### 📝 **Registration Screen**
+### 🍽️ **Menu & Restaurant Browse**
 <img src="assets/Screenshot_2.png" alt="FoodSwift Registration Screen" width="250"/>
 
-### 🍽️ **Menu & Restaurant Browse**
+### 🛒 **Shopping Cart**
 <img src="assets/Screenshot_3.png" alt="FoodSwift Menu Screen" width="250"/>
 
-### 🛒 **Shopping Cart**
+### 📦 **Order Tracking**
 <img src="assets/Screenshot_4.png" alt="FoodSwift Cart Screen" width="250"/>
 
-### 📦 **Order Tracking**
+### 📝 **Feedback Form** 📝
 <img src="assets/Screenshot_5.png" alt="FoodSwift Orders Screen" width="250"/>
 
 </div>
