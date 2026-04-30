@@ -281,5 +281,5 @@ If you encounter any issues or have suggestions:
 ## 📞 Contact
 
 For inquiries or support, please reach out:
-- Email: your-email@example.com
-- GitHub: [your-username](https://github.com/your-username)
+- Email: almaflehi0@gmail.com
+- GitHub: [ALMAFLEHI](https://github.com/ALMAFLEHI)
