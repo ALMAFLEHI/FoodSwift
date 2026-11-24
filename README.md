@@ -1,285 +1,228 @@
-#  FoodSwift - Smart University Campus Canteen Ordering
-
-FoodSwift is a smart university campus canteen ordering application designed to improve the food ordering experience inside university campuses. The app helps students browse available meals, customize their orders, pre-order food, track order status in real time, and pick up their meals from the canteen without waiting in long queues during peak hours.
-
-FoodSwift includes different user roles, such as students, canteen staff, and admin managers. Students can place and track orders, canteen staff can manage incoming orders and update food availability, while admins can monitor operations, review reports, manage system data, and improve service efficiency.
-
-The project focuses on solving common university canteen problems such as long queues, manual order handling, unclear food availability, order mistakes, and lack of real-time tracking. By digitalizing the ordering process, FoodSwift provides a faster, more organized, and user-friendly experience for both students and canteen operators.
-
-## 📱 Screenshots
-
 <div align="center">
 
-###  **Splash Screen**
-<img src="assets/Screenshot_0.png" alt="FoodSwift Splash Screen" width="250"/>
+<img src="docs/assets/hero.svg" alt="FoodSwift — Good food. Less waiting. Campus canteen ordering." width="100%" />
 
-### Login Screen
-<img src="assets/Screenshot_1.png" alt="FoodSwift Login Screen" width="250"/>
+# FoodSwift
 
-### Canteen Menu Browse
-<img src="assets/Screenshot_2.png" alt="FoodSwift Registration Screen" width="250"/>
+**Your campus canteen, a little closer.**
 
-### Shopping Cart
-<img src="assets/Screenshot_3.png" alt="FoodSwift Menu Screen" width="250"/>
+A Flutter app for browsing campus menus, personalizing meals, and following orders from your phone.
 
-### Order Tracking
-<img src="assets/Screenshot_4.png" alt="FoodSwift Cart Screen" width="250"/>
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.8%2B-0175C2?style=flat-square&logo=dart&logoColor=white)](pubspec.yaml)
+[![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-DD6B20?style=flat-square&logo=firebase&logoColor=white)](https://firebase.google.com/)
+[![Riverpod](https://img.shields.io/badge/State-Riverpod-6954C0?style=flat-square)](lib/features/menu/menu_controller.dart)
+[![Android](https://img.shields.io/badge/Platform-Android-3D7B46?style=flat-square&logo=android&logoColor=white)](android/)
 
-### Feedback Form
-<img src="assets/Screenshot_5.png" alt="FoodSwift Orders Screen" width="250"/>
+[Explore the app](#the-app-in-action) &nbsp; · &nbsp; [Features](#built-around-the-campus-day) &nbsp; · &nbsp; [Architecture](#under-the-hood) &nbsp; · &nbsp; [Get started](#run-it-locally)
 
 </div>
 
-## Features
+<br />
 
-### 🎨 **Modern UI/UX Design**
-- **Contemporary Design System**: Modern color palette with orange/red gradient theme
-- **Consistent Typography**: Well-defined text styles for better readability
-- **Smooth Animations**: Elastic animations and transitions for enhanced user experience
-- **Responsive Layout**: Optimized for various screen sizes and orientations
+## A better break between classes
 
-### 🔐 **Authentication System**
-- **Email/Password Login**: Secure user authentication with Firebase
-- **Google Sign-In**: Quick social login integration
-- **User Registration**: Streamlined sign-up process
-- **Password Recovery**: Forgot password functionality
+Lunch should fit around your day. FoodSwift brings campus canteens into one mobile experience: discover a dish, choose how you like it, place an order, and check its progress before heading over for pickup.
 
-### 🍽️ **Menu & Ordering**
-- **Canteen Menu Browse**: Browse available meals from campus canteens
-- **Food Type Filtering**: Filter by cuisine types (Malaysian, Indian, Chinese, Western)
-- **Detailed Menu Items**: Rich product cards with images, prices, and descriptions
-- **Pre-order Options**: Schedule meals in advance to avoid peak hour queues
-- **Customization Options**: Spice level, portion size, and special notes
+Built around familiar Malaysian, Indian, Chinese, and Western food categories, the app connects a student ordering experience with Firebase data and a set of administration screens for managing canteen information.
 
-### 🛒 **Shopping Cart**
-- **Cart Management**: Add, edit, and remove items from cart
-- **Real-time Updates**: Live price calculations and availability checks
-- **Order Summary**: Clear breakdown of items and totals
-- **Pre-order Checkout**: Schedule pickup time to avoid waiting
+| Discover | Make it yours | Keep up to date |
+| :--- | :--- | :--- |
+| Browse dishes by canteen and cuisine, with photos and prices in RM. | Choose spice level, portion size, and special notes. | Review your orders and follow status changes through Firestore. |
 
-### 📦 **Order Tracking**
-- **Real-time Status**: Live order updates (Preparing, Ready for Pickup, Completed)
-- **Order History**: View past orders and details
-- **Pickup Notifications**: Get alerts when your order is ready
-- **Canteen Information**: Complete canteen details and operating hours
+<br />
 
-### 👤 **User Profile**
-- **Account Management**: Update personal information and student details
-- **Order Preferences**: Manage pickup preferences and dietary requirements
-- **Settings**: App customization options and notification preferences
+## The app in action
 
-### 🛠️ **Admin Dashboard**
-- **Analytics Overview**: Track orders, peak hours, and student preferences
-- **Menu Management**: Add, edit, and remove menu items and availability
-- **Staff Management**: Manage canteen staff roles and permissions
-- **Operations Monitoring**: Real-time order tracking and queue management
-- **Feedback System**: Monitor student feedback and improve service
+Real screenshots from FoodSwift, from the first welcome to the next meal. Select any screen to see it at full size.
 
-## 🚀 Technology Stack
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <a href="assets/Screenshot_0.png"><img src="assets/Screenshot_0.png" alt="FoodSwift splash screen with its logo on an orange background" width="220" /></a><br />
+      <b>01 · Welcome</b><br />
+      <sub>An animated introduction to FoodSwift.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="assets/Screenshot_1.png"><img src="assets/Screenshot_1.png" alt="Login screen with email, password, Google sign-in, and password recovery" width="220" /></a><br />
+      <b>02 · Sign in</b><br />
+      <sub>Email and Google account access.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="assets/Screenshot_2.png"><img src="assets/Screenshot_2.png" alt="Campus menu with canteen filters, cuisine categories, dish photos, and prices in RM" width="220" /></a><br />
+      <b>03 · Find your meal</b><br />
+      <sub>Canteens, cuisines, and food worth a look.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="assets/Screenshot_3.png"><img src="assets/Screenshot_3.png" alt="My Cart screen showing the empty-cart illustration and menu navigation" width="220" /></a><br />
+      <b>04 · Your cart</b><br />
+      <sub>A dedicated cart screen and empty state.</sub>
+    </td>
+    <td align="center">
+      <a href="assets/Screenshot_4.png"><img src="assets/Screenshot_4.png" alt="My Orders screen listing dishes, preparing statuses, and order timestamps" width="220" /></a><br />
+      <b>05 · Follow your order</b><br />
+      <sub>Order history and status in one place.</sub>
+    </td>
+    <td align="center">
+      <a href="assets/Screenshot_5.png"><img src="assets/Screenshot_5.png" alt="Feedback form with issue category, message field, and submit button" width="220" /></a><br />
+      <b>06 · Have your say</b><br />
+      <sub>Send feedback without leaving the app.</sub>
+    </td>
+  </tr>
+</table>
 
-### Frontend
-- **Flutter 3.x**: Cross-platform mobile app development
-- **Dart**: Programming language for Flutter apps
+<details>
+<summary><b>One more look · Account and settings</b></summary>
 
-### State Management
-- **Riverpod**: Modern state management solution
-- **Firebase Auth**: Authentication and user management
+<p align="center">
+  <a href="assets/Screenshot_6.png"><img src="assets/Screenshot_6.png" alt="Account sheet with profile details, password change, app version, and logout" width="260" /></a>
+  <br />
+  <sub>Profile details, account security, app information, and sign-out.</sub>
+</p>
 
-### Backend & Database
-- **Firebase Firestore**: NoSQL cloud database
-- **Firebase Storage**: Cloud storage for images and media
-- **Firebase Cloud Messaging**: Push notifications
+</details>
 
-### UI/UX
-- **Material Design 3**: Modern design principles
-- **Lottie Animations**: Smooth, engaging animations
-- **Custom Design System**: Consistent theming and styling
+<br />
 
-## 📋 Requirements
+## Built around the campus day
 
-- **Flutter SDK**: 3.0.0 or higher
-- **Dart SDK**: 2.17.0 or higher
-- **Android SDK**: API level 21 (Android 5.0) or higher
-- **iOS**: iOS 11.0 or higher (for iOS development)
+| Capability | What is in the project |
+| :--- | :--- |
+| **Account access** | Email/password registration and sign-in, Google sign-in, password recovery, and password changes. |
+| **Campus menus** | Canteen selection, cuisine filtering, dish images, names, and prices. |
+| **Meal customization** | Mild, medium, or spicy; small, regular, or large; plus optional preparation notes. |
+| **Ordering** | The dish customization screen submits orders to Firestore. Each submitted dish carries its canteen, price, and preparation preferences. |
+| **Cart screens** | Cart state, item editing, removal, totals, and submission code are included. The menu-to-cart connection still needs to be completed. |
+| **Order updates** | A personal order list backed by a Firestore stream, displaying each dish's stored status and timestamp. |
+| **Student feedback** | Categorized feedback for order issues, missing items, app performance, and other concerns. |
+| **Administration screens** | Dashboard summaries, user and staff records, menu editing, feedback, complaints, and date-range reports. See the integration notes below before using the admin route. |
+| **Visual experience** | Orange accents, rounded food cards, a Lottie cooking animation, and persistent navigation between menu, cart, orders, and account. |
 
-## 🛠️ Installation
+<details>
+<summary><b>Current scope and integration notes</b></summary>
 
-### Prerequisites
-1. Install [Flutter SDK](https://flutter.dev/docs/get-started/install)
-2. Set up your preferred development environment (Android Studio / VS Code)
-3. Configure Android/iOS emulators or physical devices
+FoodSwift is an Android-focused application project. The repository includes the student flow and admin screens; connecting a fresh Firebase project requires the [setup guide](docs/GETTING_STARTED.md).
 
-### Setup Instructions
+- **Admin integration:** the dashboard's `AdminProvider` still needs to be registered in the widget tree. Student and admin menu code currently use different collection names (`menu` and `menuItems`).
+- **Account profiles:** email registration creates an Auth account but does not create the Firestore user profile required by the email login flow.
+- **Notifications:** Android foreground notification handling is present; a backend sender for order updates is not included.
+- **Pickup workflow:** scheduled pickup, payment processing, delivery tracking, and a separate staff fulfillment flow are not implemented in this checkout.
+- **Verification:** the existing test is Flutter's starter counter test, so it does not establish coverage of the FoodSwift flows.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/foodswift.git
-   cd foodswift
-   ```
+</details>
 
-2. **Install dependencies**
-   ```bash
-   flutter pub get
-   ```
+<br />
 
-3. **Firebase Configuration**
-   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
-   - Enable Authentication (Email/Password and Google Sign-In)
-   - Set up Firestore Database
-   - Configure Firebase Storage
-   - Download `google-services.json` (Android) and place it in `android/app/`
-   - Download `GoogleService-Info.plist` (iOS) and place it in `ios/Runner/`
-   - Update `lib/firebase_options.dart` with your Firebase configuration
+## Under the hood
 
-4. **Run the application**
-   ```bash
-   flutter run
-   ```
+```mermaid
+flowchart LR
+    UI["Flutter screens<br/>Menu · Cart · Orders · Account"]
+    RP["Riverpod providers<br/>Authentication · Menus · Cart"]
+    AUTH["Firebase Authentication<br/>Email/password · Google"]
+    DB[("Cloud Firestore")]
+    ADMIN["Admin screens<br/>Provider / ChangeNotifier"]
+    FCM["Firebase Cloud Messaging"]
+    LOCAL["Android foreground notifications"]
 
-## 📱 Development
-
-### Running on Different Platforms
-
-```bash
-# Run on Android
-flutter run -d android
-
-# Run on iOS
-flutter run -d ios
-
-# Run on Web
-flutter run -d chrome
-
-# Run on Windows
-flutter run -d windows
-
-# Run on macOS
-flutter run -d macos
-
-# Run on Linux
-flutter run -d linux
+    UI --> RP
+    RP --> AUTH
+    RP --> DB
+    UI -->|Orders and feedback| DB
+    ADMIN -.->|Requires provider registration| DB
+    FCM --> LOCAL
 ```
 
-### Development Commands
+The app uses a feature-based Flutter layout. Riverpod manages the student-side providers and cart state; several screens write directly to Firestore. The admin module uses a separate `ChangeNotifier` provider. Firebase Authentication handles identity, while Firestore stores the application records.
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| App | **Flutter + Dart** | Screens, named routes, themes, and Android application. |
+| State | **Flutter Riverpod** | Auth controller, menu and canteen loading, and cart state. |
+| Admin state | **Provider** | `AdminProvider` and management data. |
+| Identity and data | **Firebase Auth + Cloud Firestore** | Accounts, canteens, menus, orders, and feedback. |
+| Notifications | **Firebase Messaging + Flutter Local Notifications** | Android foreground notification reception and display. |
+| Motion | **Lottie** | Cooking animation used in the welcome and app header experience. |
+
+<br />
+
+## Run it locally
+
+Use a Flutter SDK compatible with **Dart `^3.8.0`**, an Android emulator or device, and your own Firebase project. Android is the platform scaffold included in this repository.
 
 ```bash
-# Install dependencies
+git clone https://github.com/ALMAFLEHI/FoodSwift.git
+cd FoodSwift
 flutter pub get
-
-# Update dependencies
-flutter pub upgrade
-
-# Clean build cache
-flutter clean
-
-# Analyze code
-flutter analyze
-
-# Run tests
-flutter test
-
-# Build APK
-flutter build apk
-
-# Build iOS
-flutter build ios
 ```
 
-## 🎨 Design System
+Configure Firebase before launching. The project imports `lib/firebase_options.dart`; that file and `android/app/google-services.json` are intentionally excluded from Git. Enable email/password and Google authentication, generate your project's configuration, and prepare the Firestore collections and user profiles.
 
-The app features a comprehensive design system with:
+**[Follow the complete setup guide →](docs/GETTING_STARTED.md)**
 
-### Colors
-- **Primary**: Modern Orange (#FF6B35)
-- **Primary Dark**: Darker Orange (#E55100)
-- **Accent**: Fresh Green (#4CAF50)
-- **Background**: Light Gray (#F8F9FA)
-- **Surface**: Pure White (#FFFFFF)
+Once configuration and data are ready:
 
-### Typography
-- **Headings**: Bold, hierarchical text styles
-- **Body**: Clean, readable body text
-- **Buttons**: Consistent button typography
-- **Captions**: Small, supporting text
-
-### Spacing & Layout
-- **Consistent Spacing**: 4px, 8px, 16px, 24px, 32px, 48px scale
-- **Border Radius**: Rounded corners for modern look
-- **Shadows**: Subtle shadows for depth and hierarchy
-
-## 🔧 Configuration
-
-### Firebase Setup
-1. Enable Authentication with Email/Password and Google providers
-2. Create Firestore database with collections:
-   - `users` (user profiles)
-   - `restaurants` (restaurant information)
-   - `menu_items` (food items)
-   - `orders` (order data)
-   - `feedback` (customer feedback)
-
-### Environment Variables
-Update the following in `lib/firebase_options.dart`:
-- `YOUR_WEB_API_KEY`
-- `YOUR_ANDROID_API_KEY`
-- `YOUR_PROJECT_ID`
-- And other Firebase configuration values
-
-## 📄 Project Structure
-
-```
-lib/
-├── app/
-│   ├── theme/           # Design system and theming
-│   └── router.dart      # App routing configuration
-├── features/
-│   ├── auth/           # Authentication screens
-│   ├── menu/           # Menu and restaurant browsing
-│   ├── cart/           # Shopping cart functionality
-│   ├── order/          # Order management
-│   └── profile/        # User profile and settings
-├── models/             # Data models
-├── providers/          # State management
-├── screens/            # Additional screens
-└── utils/              # Utility functions
+```bash
+flutter devices
+flutter run -d <device-id>
 ```
 
-## 🤝 Contributing
+<details>
+<summary><b>Development commands</b></summary>
 
-We welcome contributions! Please follow these steps:
+```bash
+flutter analyze       # Static analysis
+flutter test          # Existing starter test; see setup guide for its limitations
+flutter build apk     # Android APK build
+```
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+These commands require the local Flutter/Firebase setup. The README does not claim a passing application test suite or a verified release build.
 
-## 📝 License
+</details>
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<br />
 
-## 🐛 Issues & Support
+## Find your way around
 
-If you encounter any issues or have suggestions:
+```text
+FoodSwift/
+├── lib/
+│   ├── app/                 # Named routes and shared design tokens
+│   ├── features/
+│   │   ├── auth/            # Splash, login, and registration
+│   │   ├── menu/            # Canteen menu and cuisine filters
+│   │   ├── cart/            # Cart state, editing, and checkout
+│   │   ├── order/           # Customization and order history
+│   │   ├── feedback/        # Student feedback form
+│   │   ├── profile/         # Settings and password changes
+│   │   └── restaurant/      # Canteen data provider
+│   ├── home/                # Main navigation shell
+│   ├── models/              # Firestore record models
+│   ├── providers/           # Admin state and shared providers
+│   ├── screens/             # Admin dashboard
+│   └── utils/               # Theme helpers and sample-data generator
+├── assets/                  # Original app screenshots, logo, and animation
+├── android/                 # Android application scaffold
+├── docs/                    # Setup guide and repository artwork
+└── test/                    # Starter Flutter widget test
+```
 
-1. Check existing [Issues](https://github.com/your-username/foodswift/issues)
-2. Create a new issue with detailed description
-3. Include screenshots and error logs if applicable
+## Author and project notes
 
-## 🌟 Acknowledgments
+Created by **[ALMAFLEHI](https://github.com/ALMAFLEHI)** · [Email](mailto:almaflehi0@gmail.com)
 
-- [Flutter](https://flutter.dev/) for the amazing framework
-- [Firebase](https://firebase.google.com/) for backend services
-- [Riverpod](https://riverpod.dev/) for state management
-- [Lottie](https://lottiefiles.com/) for beautiful animations
-- The Flutter community for inspiration and support
+For a bug report or an improvement, [open an issue](https://github.com/ALMAFLEHI/FoodSwift/issues). Include the screen involved, steps to reproduce, and any relevant logs.
 
----
+No license file is currently included. Contact the author regarding reuse or distribution.
 
-**Made with ❤️ using Flutter**
+<br />
 
-## 📞 Contact
+<div align="center">
 
-For inquiries or support, please reach out:
-- Email: almaflehi0@gmail.com
-- GitHub: [ALMAFLEHI](https://github.com/ALMAFLEHI)
+**FoodSwift** · Made for the moments between classes.
+
+[Back to top ↑](#foodswift)
+
+</div>

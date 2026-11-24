@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">FoodSwift — Good food. Less waiting.</title>
+  <desc id="hero-desc">A warm orange and cream FoodSwift project cover. Campus canteen ordering: browse campus menus, customize your meal, and pick up with confidence. A three-step card illustrates Browse, Customize, and Pick up.</desc>
+  <defs>
+    <clipPath id="hero-clip"><rect width="1280" height="440" rx="24"/></clipPath>
+    <linearGradient id="hero-orange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF6B35"/><stop offset="1" stop-color="#EA5425"/>
+    </linearGradient>
+    <style>
+      .hero-sans{font-family:Inter,Arial,Helvetica,sans-serif}
+      .hero-stroke{fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .hero-label{font-size:11px;font-weight:700;letter-spacing:2px}
+      .hero-title{font-size:76px;font-weight:800;letter-spacing:-3.8px}
+      .hero-step{font-size:23px;font-weight:700;letter-spacing:-.5px}
+      .hero-detail{font-size:14px;font-weight:400}
+    </style>
+  </defs>
+  <g clip-path="url(#hero-clip)" class="hero-sans">
+    <rect width="1280" height="440" fill="#FFF8F0"/>
+    <path d="M787 0h493v440H787z" fill="#FFE9DA"/>
+    <circle cx="1266" cy="24" r="187" fill="#FFD9C1"/>
+    <circle cx="1266" cy="24" r="127" class="hero-stroke" stroke="#FFF8F0" stroke-width="1.5"/>
+    <circle cx="798" cy="455" r="122" fill="#FFD9C1"/>
+    <path d="M787 0v440" stroke="#F3D5C0"/>
+
+    <!-- The serving-cloche motif echoes the existing FoodSwift identity. -->
+    <g transform="translate(64 33)" fill="#25211E">
+      <path d="M9 22a15 15 0 0 1 30 0H9z"/>
+      <rect x="6" y="26" width="36" height="4" rx="2"/>
+      <circle cx="24" cy="5" r="3"/>
+      <path d="M0 11h8M-4 17h9M0 23h5" class="hero-stroke" stroke="#FF6B35" stroke-width="3"/>
+    </g>
+    <text x="118" y="58" font-size="27" font-weight="800" letter-spacing="-1" fill="#25211E">Food<tspan fill="#E65425">Swift</tspan></text>
+    <path d="M269 37v25" stroke="#DECABC"/>
+    <text x="289" y="54" class="hero-label" fill="#756356">CAMPUS CANTEEN ORDERING</text>
+
+    <text x="60" y="169" class="hero-title" fill="#25211E">Good food.</text>
+    <text x="60" y="246" class="hero-title" fill="#E65425">Less waiting.</text>
+    <text x="64" y="297" font-size="20" fill="#62554B">Browse campus menus. Customize your meal.</text>
+    <text x="64" y="326" font-size="20" fill="#62554B">Pick up with confidence.</text>
+
+    <rect x="64" y="367" width="193" height="33" rx="16.5" fill="#25211E"/>
+    <circle cx="81" cy="383.5" r="3.5" fill="#FF8F66"/>
+    <text x="94" y="388" font-size="11" font-weight="700" letter-spacing="1.1" fill="#FFF8F0">MADE FOR CAMPUS LIFE</text>
+    <text x="276" y="388" font-size="13" fill="#8D7564">Flutter + Firebase</text>
+
+    <!-- Self-contained product workflow card; no linked images or fonts. -->
+    <rect x="827" y="73" width="390" height="308" rx="23" fill="#DDAA8B" opacity=".2"/>
+    <rect x="819" y="65" width="390" height="308" rx="23" fill="#FFFCF8" stroke="#E8CEBB"/>
+    <text x="845" y="100" class="hero-label" fill="#8A6B57">YOUR NEXT MEAL</text>
+    <rect x="1094" y="83" width="88" height="23" rx="11.5" fill="#FFF0E5"/>
+    <text x="1138" y="98" text-anchor="middle" font-size="10" font-weight="700" letter-spacing=".8" fill="#A85732">3 STEPS</text>
+    <path d="M819 119h390" stroke="#EFE1D6"/>
+    <path d="M868 159v143" class="hero-stroke" stroke="#EED8C8" stroke-width="2" stroke-dasharray="3 6"/>
+
+    <circle cx="868" cy="158" r="23" fill="#FFF0E5"/>
+    <g class="hero-stroke" stroke="#D95C2D" stroke-width="1.8">
+      <rect x="858" y="148" width="8" height="8" rx="1.5"/>
+      <rect x="871" y="148" width="8" height="8" rx="1.5"/>
+      <rect x="858" y="161" width="8" height="8" rx="1.5"/>
+      <rect x="871" y="161" width="8" height="8" rx="1.5"/>
+    </g>
+    <text x="908" y="157" class="hero-step" fill="#25211E">Browse</text>
+    <text x="908" y="180" class="hero-detail" fill="#8A7565">Find your campus favorites.</text>
+
+    <circle cx="868" cy="238" r="23" fill="#FFF0E5"/>
+    <g class="hero-stroke" stroke="#D95C2D" stroke-width="1.8">
+      <path d="M858 230h21m-21 8h21m-21 8h21"/>
+      <circle cx="863" cy="230" r="2.8" fill="#FFF0E5"/>
+      <circle cx="874" cy="238" r="2.8" fill="#FFF0E5"/>
+      <circle cx="865" cy="246" r="2.8" fill="#FFF0E5"/>
+    </g>
+    <text x="908" y="237" class="hero-step" fill="#25211E">Customize</text>
+    <text x="908" y="260" class="hero-detail" fill="#8A7565">Make the meal your own.</text>
+
+    <rect x="838" y="285" width="352" height="69" rx="15" fill="url(#hero-orange)"/>
+    <circle cx="868" cy="319" r="22" fill="#FFFFFF" opacity=".16"/>
+    <g class="hero-stroke" stroke="#FFFFFF" stroke-width="2">
+      <path d="M858 314h20l-1.5 15h-17zM863 314v-3a5 5 0 0 1 10 0v3"/>
+      <path d="m864 321 3 3 5-5"/>
+    </g>
+    <text x="908" y="316" class="hero-step" fill="#FFFFFF">Pick up</text>
+    <text x="908" y="338" class="hero-detail" fill="#FFFFFF">Follow your order to ready.</text>
+    <path d="M1154 315h13m-5-5 5 5-5 5" class="hero-stroke" stroke="#FFFFFF" stroke-width="2"/>
+
+    <text x="1014" y="411" text-anchor="middle" class="hero-label" fill="#99745A">A BETTER BREAK STARTS HERE.</text>
+  </g>
+</svg>
